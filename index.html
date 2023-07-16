@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3 Scatterplot Graph</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+<body>
+    <svg id="root">
+        <text id="title" x="150" y="50">Doping in Professional Bicycle Racing</text>
+    </svg>
+    <div id="legend">
+        <div class="legendDoping">
+            <div class="squareDoping"></div>
+            <p>Doping Allegations</p>
+        </div>
+        <div class="legendNoDoping">
+            <div class="squareNoDoping"></div>
+            <p>No Doping Allegations</p>
+        </div>
+    </div>
+    <text id="tooltip"></text>
+</body>
+<script src="./index.js"></script>
+</html>

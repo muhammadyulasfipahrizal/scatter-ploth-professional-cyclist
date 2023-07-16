@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+svg {
+    background: var(--two);
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#title {
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+#y-axis-label, #x-axis-label {
+    font-size: 1.5rem;
+}
+
+.dot:hover {
+    fill: grey;
+}
+
+g {
+    font-size: 16px;
+}
+
+#legend {
+    padding-top: 16px;
+    display: flex;
+    font-size: 22px;
+}
+
+.legendDoping {
+    display: grid;
+    grid-template: 25px / 20px 220px;
+    justify-items: start;
+    align-items: center;
+}
+
+.squareDoping {
+    height: 16px;
+    width: 16px;
+    background-color: lightblue;
+    display: inline-block;
+}
+
+.legendNoDoping {
+    display: grid;
+    grid-template: 25px / 20px 220px;
+    justify-items: start;
+    align-items: center;
+
+}
+
+.squareNoDoping {
+    height: 16px;
+    width: 16px;
+    background-color: orange;
+    display: inline-block;
+}
+
+#tooltip {
+    position: absolute;
+    margin-top: 6px;
+    visibility: hidden;
+    width: 400px;
+    height: auto;
+    font-size: 22px;
+    background: grey;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+}
